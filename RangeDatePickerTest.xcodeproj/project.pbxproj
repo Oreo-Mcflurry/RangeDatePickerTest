@@ -11,6 +11,9 @@
 		EEC0F6202C69D6C500F526EF /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEC0F61F2C69D6C500F526EF /* ContentView.swift */; };
 		EEC0F6222C69D6C700F526EF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EEC0F6212C69D6C700F526EF /* Assets.xcassets */; };
 		EEC0F6252C69D6C700F526EF /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EEC0F6242C69D6C700F526EF /* Preview Assets.xcassets */; };
+		EEC0F62D2C69D6DB00F526EF /* Fastis in Frameworks */ = {isa = PBXBuildFile; productRef = EEC0F62C2C69D6DB00F526EF /* Fastis */; };
+		EEC0F62F2C69D8A700F526EF /* TestView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEC0F62E2C69D8A700F526EF /* TestView.swift */; };
+		EEC0F6322C69DBEE00F526EF /* NativeTestView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEC0F6312C69DBEE00F526EF /* NativeTestView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +22,8 @@
 		EEC0F61F2C69D6C500F526EF /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		EEC0F6212C69D6C700F526EF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EEC0F6242C69D6C700F526EF /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		EEC0F62E2C69D8A700F526EF /* TestView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestView.swift; sourceTree = "<group>"; };
+		EEC0F6312C69DBEE00F526EF /* NativeTestView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NativeTestView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -26,6 +31,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EEC0F62D2C69D6DB00F526EF /* Fastis in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -52,7 +58,9 @@
 			isa = PBXGroup;
 			children = (
 				EEC0F61D2C69D6C500F526EF /* RangeDatePickerTestApp.swift */,
+				EEC0F6312C69DBEE00F526EF /* NativeTestView.swift */,
 				EEC0F61F2C69D6C500F526EF /* ContentView.swift */,
+				EEC0F62E2C69D8A700F526EF /* TestView.swift */,
 				EEC0F6212C69D6C700F526EF /* Assets.xcassets */,
 				EEC0F6232C69D6C700F526EF /* Preview Content */,
 			);
@@ -83,6 +91,9 @@
 			dependencies = (
 			);
 			name = RangeDatePickerTest;
+			packageProductDependencies = (
+				EEC0F62C2C69D6DB00F526EF /* Fastis */,
+			);
 			productName = RangeDatePickerTest;
 			productReference = EEC0F61A2C69D6C500F526EF /* RangeDatePickerTest.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +122,9 @@
 				Base,
 			);
 			mainGroup = EEC0F6112C69D6C500F526EF;
+			packageReferences = (
+				EEC0F62B2C69D6DB00F526EF /* XCRemoteSwiftPackageReference "Fastis" */,
+			);
 			productRefGroup = EEC0F61B2C69D6C500F526EF /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -137,6 +151,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EEC0F62F2C69D8A700F526EF /* TestView.swift in Sources */,
+				EEC0F6322C69DBEE00F526EF /* NativeTestView.swift in Sources */,
 				EEC0F6202C69D6C500F526EF /* ContentView.swift in Sources */,
 				EEC0F61E2C69D6C500F526EF /* RangeDatePickerTestApp.swift in Sources */,
 			);
@@ -344,6 +360,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		EEC0F62B2C69D6DB00F526EF /* XCRemoteSwiftPackageReference "Fastis" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/simla-tech/Fastis.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 3.2.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		EEC0F62C2C69D6DB00F526EF /* Fastis */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = EEC0F62B2C69D6DB00F526EF /* XCRemoteSwiftPackageReference "Fastis" */;
+			productName = Fastis;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = EEC0F6122C69D6C500F526EF /* Project object */;
 }
